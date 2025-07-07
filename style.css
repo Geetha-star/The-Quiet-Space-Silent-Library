@@ -1,25 +1,12 @@
+/* Google Fonts & Animate.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
 body {
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: honeydew;
   margin: 0;
   padding: 0;
-}
-/*html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}*/
-
-footer {
-  padding: 1em 2em;
-  bottom: 0; 
-  /*position:absolute;*/
-  width: 100%;
 }
 
 nav a {
@@ -37,8 +24,13 @@ main {
 }
 
 footer {
-  font-size:x-large;
+  padding: 1em 2em;
+  width: 100%;
+  font-size: x-large;
   margin-top: 2em;
+  background-color: saddlebrown;
+  color: white;
+  text-align: center;
 }
 
 .header-top {
@@ -52,78 +44,23 @@ footer {
   height: 100px;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between; /* Pushes left and right content to edges */
-  align-items: center;
-}
-
-.footer-left{ text-align: left;}
-.footer-right {
-  flex: 1;
-}
-
-.footer-right {
-  text-align:right;
-}
-.bg-body-tertiary {
-  background-color:honeydew;
-}
- .hero {
-      background-color:darkturquoise;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .testimonials {
-      background-color: #f8f9fa;
-    }
-    .cta {
-      background-color: #004080;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .cta a.btn {
-      background-color: #ffcc00;
-      color: #000;
-    }
- .social i {
-  color: #333;
-  transition: color 0.3s ease;
-}
-.social a:hover i {
-  color: #0077cc;
-}
-/* General Page Background */
-body {
-  background-color: honeydew; /* soft beige/cream tone */
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Header and Footer Styling */
-#header, #footer {
-  background-color:saddlebrown; /* deep purple */
+#header {
+  background-color: saddlebrown;
   color: white;
   padding: 30px;
   text-align: center;
 }
 
-/* Import Google Font and Animate.css */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
-
-/* Hero Section with Animated Gradient Background */
 .hero {
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  padding: 60px 0;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
   color: #00ffff;
-  padding: 100px 0;
   font-family: 'Orbitron', sans-serif;
-  text-shadow: 1px 1px 6px rgba(0, 255, 255, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 255, 255, 0.2);
   position: relative;
   overflow: hidden;
 }
 
-/* Glowing animated lines background (optional overlay) */
 .hero::before {
   content: '';
   position: absolute;
@@ -141,18 +78,17 @@ body {
   animation: moveBackground 20s linear infinite;
   z-index: 0;
 }
+
 @keyframes moveBackground {
   0% { transform: translate(0, 0); }
   100% { transform: translate(-20%, -20%); }
 }
 
-/* Ensure content is above background */
 .hero .container {
   position: relative;
   z-index: 1;
 }
 
-/* Hero Title and Subtitle */
 .hero-title {
   font-size: 48px;
   margin-bottom: 20px;
@@ -161,8 +97,6 @@ body {
   font-size: 20px;
   margin-bottom: 30px;
 }
-
-/* Neon Text Glow Effect */
 .glow {
   color: #0ff;
   text-shadow:
@@ -172,14 +106,13 @@ body {
     0 0 40px #0ff;
 }
 
-/* Hero Image */
 .hero-image {
   max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
 }
 
-/* Techy Button */
+/* Buttons */
 .btn-primary {
   background-color: #0ff;
   color: #000;
@@ -190,50 +123,13 @@ body {
   box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
   transition: all 0.3s ease-in-out;
 }
+
 .btn-primary:hover {
   background-color: #000;
   color: #0ff;
   box-shadow: 0 0 15px #0ff, 0 0 25px #0ff;
 }
 
-<style>
-  .navbartext {
-    color: white !important;
-    font-weight: bold;
-    font-size: 25px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  .navbar-brand {
-    font-size: 25px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-</style>
-/* White Techy Button */
-.btn-white {
-  background-color: #ffffff;
-  color: #000000;
-  border: 2px solid #ffffff;
-  text-transform: uppercase;
-  font-size: 16px;
-  border-radius: 8px;
-  font-family: 'Orbitron', sans-serif;
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff inset;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-white:hover {
-  background-color: #000;
-  color: #ffffff;
-  border-color: #ffffff;
-  box-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff;
-}
-
-/* Optional: Button group spacing if needed */
-.button-group a {
-  margin-bottom: 10px;
-}
-/* White Button Style */
 .btn-white {
   background-color: #fff;
   color: #000;
@@ -249,35 +145,26 @@ body {
   border-color: #fff;
 }
 
-/* General Styling */
-.hero h1,
-.hero p,
-.hero a {
-  text-shadow: 1px 1px 3px rgba(0, 255, 255, 0.2);
+.navbartext {
+  color: white !important;
+  font-weight: bold;
+  font-size: 25px;
 }
 
-section h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 600;
-}
-.hero {
-  padding: 60px 0;
-  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(0, 255, 255, 0.15);
-  font-family: 'Orbitron', sans-serif;
+.navbar-brand {
+  font-size: 25px;
 }
 
-.btn-white {
-  background-color: #fff;
-  color: #000;
-  border: 2px solid #fff;
-  font-weight: 600;
-  transition: 0.3s;
-  border-radius: 8px;
+/* Optional utility classes */
+.button-group a {
+  margin-bottom: 10px;
 }
 
-.btn-white:hover {
-  background-color: #000;
-  color: #fff;
+.social i {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social a:hover i {
+  color: #0077cc;
 }
