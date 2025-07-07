@@ -11,7 +11,7 @@
   "tags": ["Children", "Education", "Animals", "Picture Book"],
   "rating": 4.8,
   "cover": "images/very-hungry-caterpillar.jpg",
-  "pdfname": "../assets/pdf/very-hungry-caterpillar.pdf",
+  "pdfname": "assets/pdf/very-hungry-caterpillar.pdf",
   "audio": "assests/audio/very-hungry-caterpillar.mp3"
 },
   {
