@@ -1,7 +1,8 @@
 $(function() {
-  $("#header").load("../pages/header.html");
-  $("#footer").load("../pages/footer.html");
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
 });
+
 // scripts/script.js
 $(document).ready(function () {
   $("#header").html(`
@@ -36,3 +37,5 @@ function handleSearch() {
     alert("Please enter a search term.");
   }
 }
+$("#header").load("header.html");
+$("#footer").load("footer.html");
